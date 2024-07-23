@@ -144,9 +144,9 @@
                 "command": "clang++",
                 "args": [
                     "-std=c++14",
-                    "-Single_Number/include",
+                    "-ISingle_Number/include",
                     "Single_Number/src/main.cpp",
-                    "Single_Number/src/Balanced_Brackets.cpp",
+                    "Single_Number/src/Single_Number.cpp",
                     "-o",
                     "Single_Number/bin/single_number.exe"
                 ]

@@ -8,7 +8,7 @@ int main()
     std::cin >> n;
 
     std::vector<int> nums(n);
-    std::cout << "Enter numbers:" << std::endl;
+    std::cout << "Enter numbers (space delimited):" << std::endl;
     for (int i = 0; i < n; ++i)
         std::cin >> nums[i];
     
