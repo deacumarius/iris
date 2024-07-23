@@ -21,7 +21,7 @@
             "windows": {
                 "command": "clang++",
                 "args": [
-                    "-std=c++11",
+                    "-std=c++14",
                     "-IBalanced_Brackets/include",
                     "Balanced_Brackets/src/main.cpp",
                     "Balanced_Brackets/src/Balanced_Brackets.cpp",
@@ -52,7 +52,7 @@
             "windows": {
                 "command": "clang++",
                 "args": [
-                    "-std=c++11",
+                    "-std=c++14",
                     "-IBalanced_Brackets/include",
                     "-ICatch2",
                     "Balanced_Brackets/src/test_main.cpp",

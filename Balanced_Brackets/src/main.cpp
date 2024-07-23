@@ -5,6 +5,7 @@
 int main() 
 {
     std::string s;
+    std::cout << "Input expression:" << std::endl;
     std::cin >> s;
 
     if (checkBracketsBalanced(s))
