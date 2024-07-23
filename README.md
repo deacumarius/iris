@@ -10,13 +10,9 @@
 
 ## 2. Build & Run
 
-- **Build Tasks**:
-  - **Build Balanced Brackets**: Compile the main project.
-  - **Build Balanced Brackets Tests**: Compile the test suite.
-- **Run Tasks**:
-  - **Run Balanced Brackets**: Execute the main project.
-  - **Run Balanced Brackets Tests**: Execute the test suite.
-
+- **Balanced Brackets**:
+  - Use the **Build Balanced Brackets** or **Build Balanced Brackets Tests** tasks for building.
+  - Use the **Run Balanced Brackets** or **Run Balanced Brackets Tests** tasks for running the project and tests.
 ## 3. Extra
 
 - **Clean Up**: Use the **Clean All** task to remove all generated files and clean up the project.
