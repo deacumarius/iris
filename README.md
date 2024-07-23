@@ -4,8 +4,7 @@
 
 - **Project Created in Visual Studio Code**: The project is set up and configured using Visual Studio Code.
 - **Build Tools**:
-  - Uses `g++` for Linux builds and `clang++` for Windows builds. Ensure both compilers are available in the command line.
-  - To make `clang` available in the Windows command line, follow this [link](https://stackoverflow.com/questions/18711595/how-run-clang-from-command-line-on-windows).
+  - Uses `g++` for Linux builds and `clang++` for Windows builds. **Please make sure `clang++` is avalilable in command line**.
 - **C++ Standard**: The project uses C++11.
 
 ## 2. Build & Run
