@@ -11,9 +11,13 @@
 ## 2. Build & Run
 
 - **Balanced Brackets**:
-  - Use the **Build Balanced Brackets** or **Build Balanced Brackets Tests** tasks for building.
-  - Use the **Run Balanced Brackets** or **Run Balanced Brackets Tests** tasks for running the project and tests.
-  - To run a task you can use `Terminal->Run Task...` from the menu.
+  - Use the **Build Balanced Brackets Console App** or **Build Balanced Brackets Tests** tasks for building.
+  - Use the **Run Balanced Brackets Console App** or **Run Balanced Brackets Tests** tasks for running the project and tests.
+- **Single Number**:  
+  - Use the **Build Single Number Console App** or **Build Single Number Tests** tasks for building.
+  - Use the **Run Single Number Console App** or **Run Single Number Tests** tasks for running the project and tests.
+- To run a task you can use `Terminal->Run Task...` from the menu.
+
 ## 3. Extra
 
 - **Clean Up**: Use the **Clean All** task to remove all generated files and clean up the project.

@@ -1,7 +1,7 @@
 {
     "tasks": [
         {
-            "label": "Build Balanced Brackets",
+            "label": "Build Balanced Brackets Console App",
             "type": "shell",
             "command": "g++",
             "args": [
@@ -63,7 +63,7 @@
             }            
         },        
         {
-            "label": "Run Balanced Brackets",
+            "label": "Run Balanced Brackets Console App",
             "type": "shell",
             "command": "./Balanced_Brackets/bin/brackets",
             "group": {
@@ -121,7 +121,109 @@
                     "Balanced_Brackets\\bin\\*",
                 ]
             }
-        }                   
+        },
+        {
+            "label": "Build Single Number Console App",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++11",
+                "-ISingle_Number/include",
+                "Single_Number/src/main.cpp",
+                "Single_Number/src/Single_Number.cpp",
+                "-o",
+                "Single_Number/bin/single_number"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compile the Balanced Brackets application",
+            "windows": {
+                "command": "clang++",
+                "args": [
+                    "-std=c++14",
+                    "-Single_Number/include",
+                    "Single_Number/src/main.cpp",
+                    "Single_Number/src/Balanced_Brackets.cpp",
+                    "-o",
+                    "Single_Number/bin/single_number.exe"
+                ]
+            }            
+        },
+        {
+            "label": "Build Single Number Tests",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++11",
+                "-ISingle_Number/include",
+                "-ICatch2",
+                "Single_Number/src/test_main.cpp",
+                "Single_Number/src/Single_Number.cpp",
+                "-o",
+                "Single_Number/bin/tests"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compile the Balanced Brackets application",
+            "windows": {
+                "command": "clang++",
+                "args": [
+                    "-std=c++14",
+                    "-ISingle_Number/include",
+                    "-ICatch2",
+                    "Single_Number/src/test_main.cpp",
+                    "Single_Number/src/Single_Number.cpp",
+                    "-o",
+                    "Single_Number/bin/tests.exe"
+                ]
+            }            
+        },        
+        {
+            "label": "Run Single Number Console App",
+            "type": "shell",
+            "command": "./Single_Number/bin/single_number",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            },
+            "windows": {
+                "command": "./Single_Number/bin/single_number.exe"
+            }            
+        },   
+        {
+            "label": "Run Single Number Tests",
+            "type": "shell",
+            "command": "./Single_Number/bin/tests",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            },
+            "windows": {
+                "command": "./Single_Number/bin/tests.exe"
+            }            
+        },                             
     ],
     "version": "2.0.0"
 }
