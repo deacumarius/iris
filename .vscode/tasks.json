@@ -1,0 +1,127 @@
+{
+    "tasks": [
+        {
+            "label": "Build Balanced Brackets",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++11",
+                "-IBalanced_Brackets/include",
+                "Balanced_Brackets/src/main.cpp",
+                "Balanced_Brackets/src/Balanced_Brackets.cpp",
+                "-o",
+                "Balanced_Brackets/bin/brackets"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compile the Balanced Brackets application",
+            "windows": {
+                "command": "clang++",
+                "args": [
+                    "-std=c++11",
+                    "-IBalanced_Brackets/include",
+                    "Balanced_Brackets/src/main.cpp",
+                    "Balanced_Brackets/src/Balanced_Brackets.cpp",
+                    "-o",
+                    "Balanced_Brackets/bin/brackets.exe"
+                ]
+            }            
+        },
+        {
+            "label": "Build Balanced Brackets Tests",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++11",
+                "-IBalanced_Brackets/include",
+                "-ICatch2",
+                "Balanced_Brackets/src/test_main.cpp",
+                "Balanced_Brackets/src/Balanced_Brackets.cpp",
+                "-o",
+                "Balanced_Brackets/bin/tests"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compile the Balanced Brackets application",
+            "windows": {
+                "command": "clang++",
+                "args": [
+                    "-std=c++11",
+                    "-IBalanced_Brackets/include",
+                    "-ICatch2",
+                    "Balanced_Brackets/src/test_main.cpp",
+                    "Balanced_Brackets/src/Balanced_Brackets.cpp",
+                    "-o",
+                    "Balanced_Brackets/bin/tests.exe"
+                ]
+            }            
+        },        
+        {
+            "label": "Run Balanced Brackets",
+            "type": "shell",
+            "command": "./Balanced_Brackets/bin/brackets",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            },
+            "windows": {
+                "command": "./Balanced_Brackets/bin/brackets.exe"
+            }            
+        },   
+        {
+            "label": "Run Balanced Brackets Tests",
+            "type": "shell",
+            "command": "./Balanced_Brackets/bin/tests",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            },
+            "windows": {
+                "command": "./Balanced_Brackets/bin/tests.exe"
+            }            
+        },  
+        {
+            "label": "Clean all",
+            "type": "shell",
+            "command": "rm",
+            "args": [
+                "-rf",
+                "Balanced_Brackets/bin/*",
+            ],
+            "group": {
+                "kind": "clean",
+                "isDefault": true
+            },
+            "windows": {
+                "command": "del",
+                "args": [
+                    "/q",
+                    "Balanced_Brackets\\bin\\*",
+                ]
+            }
+        }                   
+    ],
+    "version": "2.0.0"
+}
